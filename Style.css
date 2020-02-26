@@ -1,0 +1,197 @@
+/* Structure générale */
+
+@font-face {
+    font-family: 'advent_proregular';
+    src: url('fonts/adventpro-regular-webfont.eot');
+    src: url('fonts/adventpro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/adventpro-regular-webfont.woff2') format('woff2'),
+         url('fonts/adventpro-regular-webfont.woff') format('woff'),
+         url('fonts/adventpro-regular-webfont.ttf') format('truetype'),
+         url('fonts/adventpro-regular-webfont.svg#advent_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#page
+{
+    display: flex;
+    font-family: 'advent-proregular', sans-serif;
+    font-size: 17px;
+	max-width: 1000px;
+    flex-wrap: wrap;
+}
+
+html
+{   
+    display: flex;
+    justify-content: center;
+    width: 94%;
+
+    margin: auto;
+}
+
+
+
+
+
+
+/* Header */
+
+#En-tête
+{
+    display: flex;
+    background-color: #87CEFA;
+    
+}
+
+#Soulignage
+{
+    border-bottom: solid ;
+    border-color: rgb(231, 52, 52) ;
+}
+
+
+
+
+/* Main */
+
+#Main
+{
+    background-color: #DCDCDC;
+
+
+
+}
+
+#h3
+{
+
+}
+
+
+
+
+
+
+
+/* Aside */
+#Aside
+{
+
+    background-color: #87CEFA;
+
+    
+}
+
+#Contact
+{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#h3_aside
+{
+    display: flex;
+    justify-content: center;
+    margin: 1em auto;
+    background: center;
+    background-color: grey;
+    color: #DCB872 ;
+    font-size: x-large;
+    font-weight: bolder;
+
+}
+
+
+#element_list_aside
+
+{
+    display: flex;
+    margin: 2em auto;
+ 
+
+}
+
+#lien_aside
+{
+    margin: 1em auto;
+    display: flex;
+  
+}
+
+/*Media queries */
+
+/*Tablettes */
+@media all and (max-width: 900px)
+{
+#Main
+    {   
+        display: flex;
+        flex-direction: column;
+    } 
+
+#En-tête
+{   
+    display: flex;
+    flex-direction: column;
+
+}
+
+#main_titre
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: none;
+}
+
+#sous_titre
+
+{
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+#Formation
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#h3_main
+{
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0px 20px 50px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+/* Téléphone */
+@media all and (max-device-width: 480px)
+{
+
+}
+
+
+
+
+
+
+/* Desktop */
+@media all and (max-width: 1280px)
+{
+
+}

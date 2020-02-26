@@ -1,0 +1,342 @@
+/*----ORGANISATON GENERALE DE LA PAGE------*/
+
+
+@font-face 
+{
+	font-family: 'open_sansregular';
+	src: url('fonts/opensans_regular_macroman/OpenSans-Regular-webfont.eot');
+	src: url('fonts/opensans_regular_macroman/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('fonts/opensans_regular_macroman/OpenSans-Regular-webfont.woff2') format('woff2'),
+	url('fonts/opensans_regular_macroman/OpenSans-Regular-webfont.woff') format('woff'),
+	url('fonts/opensans_regular_macroman/OpenSans-Regular-webfont.ttf') format('truetype'),
+	url('fonts/opensans_regular_macroman/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face 
+{
+	font-family: 'open_sanssemibold';
+	src: url('fonts/opensans_semibold_macroman/OpenSans-Semibold-webfont.eot');
+	src: url('fonts/opensans_semibold_macroman/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('fonts/opensans_semibold_macroman/OpenSans-Semibold-webfont.woff2') format('woff2'),
+	url('fonts/opensans_semibold_macroman/OpenSans-Semibold-webfont.woff') format('woff'),
+	url('fonts/opensans_semibold_macroman/OpenSans-Semibold-webfont.ttf') format('truetype'),
+	url('fonts/opensans_semibold_macroman/OpenSans-Semibold-webfont.svg#open_sanssemibold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+} 
+/*Police des titres du Aside à partir d'un webfontkit*/
+
+
+body
+{
+	margin: 0;
+	padding: 0;
+}
+
+#bloc_page
+{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 10px;
+	color: rgba(66,66,66 ,1);
+	display: flex; /*Le bloc page en flexbox va permettre d'organiser l'aside et la section principale horizontalement*/ 
+	margin:0;
+}
+
+li
+{
+	list-style-type: none;
+}
+
+a
+{
+	text-decoration: none;
+	color: rgba(66,66,66 ,1);
+}
+
+/*----ASIDE------*/
+
+
+#lisere
+{
+	width: 200px; /*le lisere ne dépasse pas 270 px de large*/
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(230,81,0 ,1);
+	border-right: solid #1B5E20;
+}
+
+#cadre_photo h3
+{
+	display: none; /* Le titre n'apparait pas, le titre est néanmoins recommandé par le service de validation W3C */
+} 
+
+#cadre_photo
+{
+	align-self: center; /* seule la photo est centrée dans le conteneur flex*/
+	margin-top: 0px;
+	border: solid 3px #1B5E20;
+	border-radius: 50%;
+	width: 130px;
+	height: 130px; /*le radius à 50% + width et height de même valeur = rond*/
+	overflow: hidden; /*la photo ne dépasse pas du cadre*/
+}
+
+#cadre_photo_header /*N'apparait que sur mobile*/
+{
+	display: none;
+}
+
+.photo
+{
+	display: block;
+	width: 120%;
+	margin-top: -25px; /* Pourquoi un margin bottom ne fonctionne pas ?*/
+	margin-left: -12px;
+}
+
+.titre_aside
+{
+	text-align: center;
+	text-transform: uppercase;
+	color:rgba(66,66,66 ,1);
+	background-color: rgba(66,66,66 ,1);
+	padding: 0;
+	margin-bottom: 0;
+	font-family: open_sansregular, Arial, sans-serif;
+	font-weight:normal;
+	font-size: 1.4em;
+}
+
+.titre_aside_gras /*Ne s'applique qu'au titre "A propos de moi"*/
+{
+	text-align: center;
+	text-transform: uppercase;
+	color:rgba(66,66,66 ,1);
+	background-color: rgba(66,66,66 ,1);
+	padding: 0;
+	margin-bottom: 0;
+	font-family: open_sanssemibold, Arial, sans-serif;
+	font-weight:normal;
+	font-size: 1.4em;
+}
+
+.liste_contact
+{
+	padding-left: 8%;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+.liste_contact li
+{
+	margin-bottom: 5%;
+}
+
+#a_propos
+{
+	flex:0.5;
+}
+
+#a_propos p
+{
+	font-size: 1.2em;
+}
+
+aside p
+{
+	text-align: justify;
+	margin: 10px;
+}
+
+.icones_loisirs
+{
+	display: flex;
+	justify-content: space-around;
+	color: #1B5E20;
+	margin-bottom: 25px;
+}
+
+
+/*----HEADER------*/
+
+
+header
+{
+	margin-bottom: 28px;
+
+}
+
+h1
+{
+	text-transform: uppercase;
+	font-weight: 300;
+	font-family: Yantramanav, Arial, sans-serif;
+	font-size: 2.5em;
+	color: black;
+	margin-top: 0px;
+	margin-bottom: 0;
+	margin-left: 50px;
+	padding-bottom:0px;
+}
+
+#prenom
+{
+	font-weight: 400;
+	color: #1B5E20;
+}
+
+h2
+{
+	margin-top: 0;
+	margin-left: 50px;
+	padding-top: 0;
+	font-size: 1.5em;
+	color: rgba(66,66,66 ,1)
+}
+
+#ligne_dev
+{
+	border-bottom:solid;
+	border-color:#1B5E20;
+}
+
+/*----PAGE CENTRALE------*/
+
+#page_centrale
+{
+	flex:1; /*permet à la page centrale de prendre tous l'espace disponible en largeur*/
+}
+
+section h2
+{
+	display: none;/* Le titre n'apparait pas, le titre est néanmoins recommandé par le service de validation W3C */
+}
+
+article p
+{
+	margin-bottom: 0;
+}
+
+.titre_page /*Contient l'icone et le titre de chaque article*/
+{
+	margin-left: 20px;
+	padding-bottom: 0px;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	font-weight: bold;
+	display: flex;
+	border-bottom: solid #1B5E20;
+}
+
+.titre_page h3
+
+{
+	font-size: 1em;
+	margin: 0;
+}
+
+.icone_article
+{
+	color: #1B5E20;
+}
+
+
+.titre_page div /*Gère l'espacement entre l'icone et le titre des articles*/
+{
+	margin-right: 30px;
+}
+
+.liste_page /* = balise ul*/
+{
+	margin-left: 10px;
+	padding-left: 0px;
+}
+
+.item_formation, .item_professionnel /* Correspond au bloc Puce+Année+Paragraphe*/
+{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.bloc_puces
+{
+	display: flex;
+	font-weight: bold;
+}
+
+.puces_page
+{
+	color: #1B5E20;
+	font-size: 0.8em;
+	margin-right: 10px;
+}
+
+.année
+
+{
+	font-size: 1.2em;
+}
+
+h4, h5
+{
+	display: inline-block; /*Retire les marge automatique au balise de type "h"*/
+	margin: 0 0 5px 0; 
+	/* que le titre de la formation soit toujours aligné horizontalement avec le paragraphe dessou*/
+	/* que le titre de la formation soit toujours aligné verticalement avec l'année*/
+	/* qu'il y ait une marge entre les titres h4/h5/paragraphe*/
+}
+
+h4
+{
+	font-weight: bold;
+	font-size: 1.3em;
+	text-transform: uppercase;
+
+}
+
+h5
+{
+	font-weight: normal;
+	font-size: 1.2em;
+}
+
+p
+{
+	margin-top: 0;
+	font-size: 1.1em;
+}
+
+.item_formation div /*les paragraphes dans un bloc formation ne doivent pas prendre toute la place*/
+{
+	max-width: 400px;
+}
+
+.item_professionnel div /*les paragraphes dans un bloc formation ne doivent pas prendre toute la place*/
+{
+	max-width: 400px;
+}
+
+.item_recommand
+{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 10px;
+	font-size: 1.2em;
+}
+
+p span
+{
+	font-weight: bold;
+}
+
