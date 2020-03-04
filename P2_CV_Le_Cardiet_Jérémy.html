@@ -5,58 +5,121 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel= "stylesheet" type="text/css" href="reset.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/6d0c1a569f.js" crossorigin="anonymous"></script>
 	
 	
 	
 </head>
-<body  id= "page">
+<body>
 	<!--Bloc de la section principale regroupant Titre et articles contenant les informations sur le parcours de l'individu-->
 	<main>
 		<!--En-tête de la page comprenant titre, sous-titre et photo -->
-		<header id="En-tête"> 
+		<header> 
 			
-			<h1 id="main_titre"><span id="Prénom">Jérémy</span> Le Cardiet</h1>
-			<h2 id="sous_titre"> <span id="Soulignage">Dével</span> oppeur web freelance</h2>
-			
-			<div>
-				<img>
-				
+			<h1><span id="Prénom">Jérémy</span> Le Cardiet</h1>
+			<div id="image">
+				<img src="./images/Photo_small.png">
 			</div>
+			<h2> <span>Dével</span> oppeur web freelance</h2>
+			
+			
 			
 		</header>
 		
 		<!-- Suite de balise article contenant les informations prioritaires -->
 		
-		<section id="Formation">
-			<h3 class="h3_main">Formation</h3>
+		<section>
+
+			<div id="Titre_article">
+				<i class="fas fa-graduation-cap fa-2x"></i>
+				<h3> Formation</h3>
+			</div>
+
 			<article> 
 				
-				<i class="image_puce"></i>
 				<div class="année">
-					2020
+					<div class="fa-1x">
+						<i class="fas fa-cog fa-spin"></i>
+					</div>
+					<span>2020</span>
+					
 				</div>
 				<div>
 					<h4>Openclassrooms</h4>
 					<h5>Formation développeur Web</h5>
 					<p>La formation développeur web m'a permis d'acquérir toutes les compétences nécéssaires pour répondre aux besoins des clients via un cahier de charges...  </p>
 				</div>
+
+
+			
+				
 				
 			</article>
+
+			<article>
+				<div class="année">
+					<i class="far fa-dot-circle"></i>
+					<span>
+					2017-2019
+				</span>
+				</div>
+				<div>
+					<h4>SFA Poitiers</h4>
+					<h5>Filière mathématiques et informatique</h5>
+					<p>La formation développeur web m'a permis d'acquérir toutes les compétences nécéssaires pour répondre aux besoins des clients via un cahier de charges...  </p>
+				</div>
+			</article>
+
+			<article>
+				<div class="année">
+					<i class="far fa-dot-circle"></i>
+					<span>
+					2016
+				</span>
+				</div>
+				<div>
+					<h4>Université Bretagne Sud</h4>
+					<h5>Filière Histoire</h5>
+					<p>La formation développeur web m'a permis d'acquérir toutes les compétences nécéssaires pour répondre aux besoins des clients via un cahier de charges...  </p>
+				</div>
+			</article>
+
+			<article>
+				<div class="année">
+					<i class="far fa-dot-circle"></i>
+					<span>2012-2016</span>
+					
+				</div>
+				<div>
+					<h4>Lycée Général André Theuriet</h4>
+					<h5>Filière ES</h5>
+					<p>La formation développeur web m'a permis d'acquérir toutes les compétences nécéssaires pour répondre aux besoins des clients via un cahier de charges...  </p>
+				</div>
+			</article>
+
+			
 			
 		</section>
 		
-		<section id="Exp_pro">
-			<h3 class="h3_main">Expérience professionelle</h3>
+		<section>
+			<div id="Titre_article">
+				<i class="fas fa-briefcase fa-2x"></i>
+			<h3>Expérience professionelle</h3>
+		</div>
+			
 		</section>
 		
-		<section id="Recommandations">
-			<h3 class="h3_main">Recommandations</h3>
+		<section>
+			<div id="Titre_article">
+				<i class="fas fa-address-book fa-2x"></i>
+			<h3>Recommandations</h3>
+		</div>
 		</section>
 		
 	</main>
 	
 	<!-- Début du bloc aside qui comporte les informations de contact et les informations secondaires, apparaît sur la gauche en format desktop et en dessous de la section "main" en version mobile-->
-	<aside id="Aside">
+	<aside>
 		
 		<h3 id="h3_aside">Contact</h3>
 		
@@ -101,6 +164,28 @@
 		
 		<section id="Loisirs">
 			<h3 id="h3_aside">Loisirs</h3>
+
+			<div>
+			<span class="fa-stack fa-3x" style="vertical-align: top;">
+				<i class="far fa-circle fa-stack-2x"></i>
+				<i class="fas fa-music fa-stack-1x"></i>
+			  </span>
+			
+
+			
+			  <span class="fa-stack fa-3x" style="vertical-align: top;">
+				<i class="far fa-circle fa-stack-2x"></i>
+				<i class="fas fa-gamepad fa-stack-1x"></i>
+			  </span>
+			
+
+			
+			  <span class="fa-stack fa-3x" style="vertical-align: top;">
+				<i class="far fa-circle fa-stack-2x"></i>
+				<i class="fas fa-chess fa-stack-1x"></i>
+			  </span>
+			</div>
+
 			
 		</section>
 		
