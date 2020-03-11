@@ -375,17 +375,18 @@ aside section p
     {
         display: flex;
         justify-content: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
         margin-top: 5px;
-        margin-bottom: 5px;
+        margin-bottom: 20px;
     }
 
     .année span
     {
+        width: 100px;
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-
     }
+
 
     #Titre_article
     {
