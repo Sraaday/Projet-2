@@ -20,8 +20,9 @@ body
     font-size: 17px;
     max-width: 1000px;
     flex-wrap: wrap;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
 html
@@ -43,6 +44,9 @@ html
 header
 {
     display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
     background-color: #eded5a;
     
 }
@@ -97,6 +101,7 @@ img
 
 
 /* Main */
+
 
 #Titre_article
 {
@@ -219,6 +224,11 @@ aside
     
 }
 
+aside section ul
+{
+    font-weight: bold;
+}
+
 a
 {
     color: black;
@@ -230,7 +240,8 @@ aside section div
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 aside section p
@@ -262,13 +273,23 @@ aside section p
         display: flex;
         justify-content: center;
         margin-bottom: none;
+        order: 1;
     }
     
+    #image
+    {
+        display: flex;
+        order: 2;
+        transform: translateY(-30px);
+    }
+
     h2
     
     {
         display: flex;
         justify-content: center;
+        order: 3;
+        transform: translateY(180px);
         
         
         
@@ -286,6 +307,7 @@ aside section p
         justify-content: flex-start;
     }
     
+
 }
 
 
@@ -294,47 +316,147 @@ aside section p
 
 
 
+/* Transition */
+
+/* Changement en colonne de la liste de contact pour s'adapter à des écrans de tablette trop petit */
+
+@media all and (max-width: 700px)
+{
+    #Contact
+    {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    aside section ul
+    {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+    }
+
+    aside section ul ol
+    {
+        display: flex;
+        justify-self: center;
+    }
+}
 
 
 /* Téléphone */
-@media all and (max-device-width: 480px)
+@media all and (max-width: 576px)
 {
-    
+    body
+    {
+        font-size: 20px;
+    }
+
+    main section article
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h4
+{
+    display: flex;
+    justify-content: space-around;
 }
+    h5
 
+    {
+        display: flex;
+        justify-content: space-around;
+    }
 
+    .année
+    {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
 
+    .année span
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
 
+    }
+
+    #Titre_article
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+}
 
 /* Desktop */
 @media all and (min-width: 901px) {
 
     body{
         display: flex;
-        flex-wrap: nowrap;
+        flex-direction: column;
+
     }
 
+    
 
-    aside
+    header
     {
         order: 1;
         display: flex;
-        justify-content: flex-start;
-    
+        width: 100%;
+        justify-content: space-around;
+        flex-direction: column;
+
+
     }
 
-    main {
+.Order_flex
+{
+    display: flex;
+    order: 2;
+}
+
+    body main
+    {
         order: 2;
-        max-width: 650px;
+    }
 
+    body aside
+    {
+        order: 1;
+    }
+
+    header
+    {   
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
     
+    .Flex_Title
+    {
+        order: 2;
+        transform: translateX(-150px) translateY(35px);
+
+    }
 
 
-    #En-tête
+
+    #image
     {
         display: flex;
+        align-self: flex-start;
+        order: 1;
+        transform: translateX(-95px) translateY(15px);
     }
+
 
     main section
     {
@@ -344,7 +466,7 @@ aside section p
     }
     aside {
         display: flex;
-        max-width: 350px;
+        max-width: 270px;
         flex-direction: column;
     }
     

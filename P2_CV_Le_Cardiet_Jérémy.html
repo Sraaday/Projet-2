@@ -12,188 +12,211 @@
 </head>
 <body>
 	<!--Bloc de la section principale regroupant Titre et articles contenant les informations sur le parcours de l'individu-->
-	<main>
-		<!--En-tête de la page comprenant titre, sous-titre et photo -->
-		<header> 
-			
+	
+	<!--En-tête de la page comprenant titre, sous-titre et photo -->
+	<header> 
+		<div class="Flex_Title">
 			<h1><span id="Prénom">Jérémy</span> Le Cardiet</h1>
-			<div id="image">
-				<img src="./images/Photo_small.png">
-			</div>
+			
 			<h2> <span>Dével</span> oppeur web freelance</h2>
 			
-			
-			
-		</header>
+		</div>
 		
-		<!-- Suite de balise article contenant les informations prioritaires -->
+		<div id="image">
+			<img src="./images/Photo_small.png">
+		</div>
 		
-		<section>
-
-			<div id="Titre_article">
-				<i class="fas fa-graduation-cap fa-2x"></i>
-				<h3> Formation</h3>
-			</div>
-
-			<article> 
+	</header>
+	
+	<!-- Suite de balise article contenant les informations prioritaires -->
+	<div class="Order_flex">
+		<main>
+			<section>
 				
-				<div class="année">
-					<div class="fa-1x">
-						<i class="fas fa-cog fa-spin"></i>
+				<div id="Titre_article">
+					<i class="fas fa-graduation-cap fa-2x"></i>
+					<h3> Formation</h3>
+				</div>
+				
+				<article> 
+					
+					<div class="année">
+						<div class="fa-1x">
+							<i class="fas fa-cog fa-spin"></i>
+						</div>
+						<span>2020</span>
+						
 					</div>
-					<span>2020</span>
+					<div>
+						<h4>Openclassrooms</h4>
+						<h5>Formation développeur Web</h5>
+						<p>La formation développeur web m'a permit d'acquérir une multitude de compétences dans le domaine du web pour me permettre de répondre à toutes les demandes clients via des cahiers de charges. De plus je suis à même de m'adapter à toutes les nouveautées du monde du web grâce à une veille technologique constante.   </p>
+					</div>
 					
-				</div>
-				<div>
-					<h4>Openclassrooms</h4>
-					<h5>Formation développeur Web</h5>
-					<p>La formation développeur web m'a permis d'acquérir toutes les compétences nécéssaires pour répondre aux besoins des clients via un cahier de charges...  </p>
-				</div>
-
-
-			
-				
-				
-			</article>
-
-			<article>
-				<div class="année">
-					<i class="far fa-dot-circle"></i>
-					<span>
-					2017-2019
-				</span>
-				</div>
-				<div>
-					<h4>SFA Poitiers</h4>
-					<h5>Filière mathématiques et informatique</h5>
-					<p>La formation développeur web m'a permis d'acquérir toutes les compétences nécéssaires pour répondre aux besoins des clients via un cahier de charges...  </p>
-				</div>
-			</article>
-
-			<article>
-				<div class="année">
-					<i class="far fa-dot-circle"></i>
-					<span>
-					2016
-				</span>
-				</div>
-				<div>
-					<h4>Université Bretagne Sud</h4>
-					<h5>Filière Histoire</h5>
-					<p>La formation développeur web m'a permis d'acquérir toutes les compétences nécéssaires pour répondre aux besoins des clients via un cahier de charges...  </p>
-				</div>
-			</article>
-
-			<article>
-				<div class="année">
-					<i class="far fa-dot-circle"></i>
-					<span>2012-2016</span>
 					
-				</div>
-				<div>
-					<h4>Lycée Général André Theuriet</h4>
-					<h5>Filière ES</h5>
-					<p>La formation développeur web m'a permis d'acquérir toutes les compétences nécéssaires pour répondre aux besoins des clients via un cahier de charges...  </p>
-				</div>
-			</article>
-
-			
-			
-		</section>
-		
-		<section>
-			<div id="Titre_article">
-				<i class="fas fa-briefcase fa-2x"></i>
-			<h3>Expérience professionelle</h3>
-		</div>
-			
-		</section>
-		
-		<section>
-			<div id="Titre_article">
-				<i class="fas fa-address-book fa-2x"></i>
-			<h3>Recommandations</h3>
-		</div>
-		</section>
-		
-	</main>
-	
-	<!-- Début du bloc aside qui comporte les informations de contact et les informations secondaires, apparaît sur la gauche en format desktop et en dessous de la section "main" en version mobile-->
-	<aside>
-		
-		<h3 id="h3_aside">Contact</h3>
-		
-		<section id="Contact">
-			
-			
-			<ul>
-				<ol id="element_list_aside">Adresse</ol>
-				<ol><a id="lien_aside" href="https://fr.mappy.com/plan/86400-civray#/2/M2/TSearch/S86400+civray/N151.12061,6.11309,0.29407,46.14653/Z10/" target="_blank">Civray, France</a></ol>
-			</ul>
-			<ul>
-				<ol id="element_list_aside">Téléphone</ol>
-				<ol><a id="lien_aside" href="tel:+33680531013">06 80 53 10 13</a></ol>
-			</ul>
-			<ul>
-				<ol id="element_list_aside">Email</ol>
-				<ol><a id="lien_aside" href="mailto:jeremylecardiet@gmail.com">jeremylecardiet@gmail.com</a></ol>
-			</ul>
-			<ul>
-				<ol id="element_list_aside">Site web</ol>
-				<ol><a id="lien_aside" href="prochainement">github.io</a></ol>
-			</ul>
-			<ul>
-				<ol id="element_list_aside">Skype</ol>
-				<ol><a id="lien_aside" href="prochainement">Jérémy.lecardiet</a></ol>
-			</ul>
-			
-		</section>
-		
-		
-		
-		<section id="a_propos">
-			<h3 id="h3_aside">à propos de moi</h3>
-			<p id ="text_aside">« Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
-				Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis. Curabitur aliquet pellentesque diam. Integer quis metus vitae elit lobortis egestas. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi vel erat non mauris convallis vehicula. Nulla et sapien. Integer tortor tellus, aliquam faucibus, convallis id, congue eu, quam. Mauris ullamcorper felis vitae erat. Proin feugiat, augue non elementum posuere, metus purus iaculis lectus, et tristique ligula justo vitae magna.
+					
+					
+					
+				</article>
 				
-				Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo. Aliquam euismod libero eu enim. Nulla nec felis sed leo placerat imperdiet. Aenean suscipit nulla in justo. Suspendisse cursus rutrum augue. Nulla tincidunt tincidunt mi. Curabitur iaculis, lorem vel rhoncus faucibus, felis magna fermentum augue, et ultricies lacus lorem varius purus. Curabitur eu amet.
-				»
-			</p>
+				<article>
+					<div class="année">
+						<i class="far fa-dot-circle"></i>
+						<span>
+							2017-2019
+						</span>
+					</div>
+					<div>
+						<h4>SFA Poitiers</h4>
+						<h5>Filière mathématiques et informatique</h5>
+						<p> La filière Mathématiques et Informatique de l'université de Poitiers m'a permis d'acquérir des compétences en ADA, F# et en Ocamel ainsi que quelques notions en HTML 5, CSS 3, XML et en Javascript. De plus j'y ai acquis un niveau C1 en Anglais. </p>
+					</div>
+				</article>
+				
+				<article>
+					<div class="année">
+						<i class="far fa-dot-circle"></i>
+						<span>
+							2016
+						</span>
+					</div>
+					<div>
+						<h4>Université Bretagne Sud</h4>
+						<h5>Filière Histoire</h5>
+						<p>La filière Histoire de L'UBS m'a permit d'étendre mes connaissances générales en Histoire, m'inculquer des notions de géopolitiques moderne et également d'archéologie. J'y ai également apris les bases du Russe.   </p>
+					</div>
+				</article>
+				
+				<article>
+					<div class="année">
+						<i class="far fa-dot-circle"></i>
+						<span>2012-2016</span>
+						
+					</div>
+					<div>
+						<h4>Lycée Général André Theuriet</h4>
+						<h5>Filière ES</h5>
+						<p>La filière ES du Lycée Général André Theuriet m'a permit de découvrir les sciences économiques et politiques et de décrocher un bacalauréat général en juillet 2016. </p>
+					</div>
+				</article>
+				
+				
+				
+			</section>
 			
-		</section>
+			<section>
+				<div id="Titre_article">
+					<i class="fas fa-briefcase fa-2x"></i>
+					<h3>Expérience professionelle</h3>
+				</div>
+				
+				<article>
+					<div class="année">
+						<i class="far fa-dot-circle"></i>
+						<span>2011</span>
+						
+					</div>
+					<div>
+						<h4>EARL La Grande Saunière</h4>
+						<h5>Stage en entreprise</h5>
+						<p> EARL La Grande Saunière, est spécialisée dans le secteur d'activité de l'élevage d'ovins et de caprins ainsi que dans la fabrication de fromage.  </p>
+					</div>
+				</article>
+				
+			</section>
+			
+			<section>
+				<div id="Titre_article">
+					<i class="fas fa-address-book fa-2x"></i>
+					<h3>Recommandations</h3>
+				</div>
+				<article>
+					<div>
+						<h4>Julien Sosthene</h4>
+						<h5>Mentor Open Classrooms</h5>
+						<p>   </p>
+					</div>
+				</article>
+			</section>
+			
+		</main>
 		
-		<section id="Loisirs">
-			<h3 id="h3_aside">Loisirs</h3>
-
-			<div>
-			<span class="fa-stack fa-3x" style="vertical-align: top;">
-				<i class="far fa-circle fa-stack-2x"></i>
-				<i class="fas fa-music fa-stack-1x"></i>
-			  </span>
+		<!-- Début du bloc aside qui comporte les informations de contact et les informations secondaires, apparaît sur la gauche en format desktop et en dessous de la section "main" en version mobile-->
+		<aside>
 			
-
+			<h3 id="h3_aside">Contact</h3>
 			
-			  <span class="fa-stack fa-3x" style="vertical-align: top;">
-				<i class="far fa-circle fa-stack-2x"></i>
-				<i class="fas fa-gamepad fa-stack-1x"></i>
-			  </span>
+			<section id="Contact">
+				
+				
+				<ul>
+					<ol id="element_list_aside">Adresse</ol>
+					<ol><a id="lien_aside" href="https://fr.mappy.com/plan/86400-civray#/2/M2/TSearch/S86400+civray/N151.12061,6.11309,0.29407,46.14653/Z10/" target="_blank">Civray, France</a></ol>
+				</ul>
+				<ul>
+					<ol id="element_list_aside">Téléphone</ol>
+					<ol><a id="lien_aside" href="tel:+33680531013">06 80 53 10 13</a></ol>
+				</ul>
+				<ul>
+					<ol id="element_list_aside">Email</ol>
+					<ol><a id="lien_aside" href="mailto:jeremylecardiet@gmail.com">jeremylecardiet@gmail.com</a></ol>
+				</ul>
+				<ul>
+					<ol id="element_list_aside">Site web</ol>
+					<ol><a id="lien_aside" href="prochainement">github.io</a></ol>
+				</ul>
+				<ul>
+					<ol id="element_list_aside">Skype</ol>
+					<ol><a id="lien_aside" href="prochainement">Jérémy.lecardiet</a></ol>
+				</ul>
+				
+			</section>
 			
-
 			
-			  <span class="fa-stack fa-3x" style="vertical-align: top;">
-				<i class="far fa-circle fa-stack-2x"></i>
-				<i class="fas fa-chess fa-stack-1x"></i>
-			  </span>
-			</div>
-
 			
-		</section>
-		
-		
-		
-		
-	</aside>
-	
+			<section id="a_propos">
+				<h3 id="h3_aside">à propos de moi</h3>
+				<p id ="text_aside">« Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+					Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis. Curabitur aliquet pellentesque diam. Integer quis metus vitae elit lobortis egestas. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi vel erat non mauris convallis vehicula. Nulla et sapien. Integer tortor tellus, aliquam faucibus, convallis id, congue eu, quam. Mauris ullamcorper felis vitae erat. Proin feugiat, augue non elementum posuere, metus purus iaculis lectus, et tristique ligula justo vitae magna.
+					
+					Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo. Aliquam euismod libero eu enim. Nulla nec felis sed leo placerat imperdiet. Aenean suscipit nulla in justo. Suspendisse cursus rutrum augue. Nulla tincidunt tincidunt mi. Curabitur iaculis, lorem vel rhoncus faucibus, felis magna fermentum augue, et ultricies lacus lorem varius purus. Curabitur eu amet.
+					»
+				</p>
+				
+			</section>
+			
+			<section id="Loisirs">
+				<h3 id="h3_aside">Loisirs</h3>
+				
+				<div>
+					<span class="fa-stack fa-2x" style="vertical-align: top;">
+						<i class="far fa-circle fa-stack-2x"></i>
+						<i class="fas fa-music fa-stack-1x"></i>
+					</span>
+					
+					
+					
+					<span class="fa-stack fa-2x" style="vertical-align: top;">
+						<i class="far fa-circle fa-stack-2x"></i>
+						<i class="fas fa-gamepad fa-stack-1x"></i>
+					</span>
+					
+					
+					
+					<span class="fa-stack fa-2x" style="vertical-align: top;">
+						<i class="far fa-circle fa-stack-2x"></i>
+						<i class="fas fa-chess fa-stack-1x"></i>
+					</span>
+				</div>
+				
+				
+			</section>
+			
+			
+			
+			
+		</aside>
+	</div>
 	
 	
 	
