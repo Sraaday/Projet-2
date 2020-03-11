@@ -125,6 +125,10 @@ main section i
     margin-right: 5px;
 }
 
+.Info_Recommandations
+{
+    margin-bottom: 7px;
+}
 .année
 {
     display: flex;
@@ -212,7 +216,7 @@ aside
 
 {
     display: flex;
-    margin: 2em auto;
+    margin: 5px 0px 5px 0px;
     
     
 }
@@ -333,13 +337,19 @@ aside section p
     {
         display: flex;
         flex-direction: column;
-        justify-self: center;
+        justify-content: center;
     }
 
     aside section ul ol
     {
         display: flex;
         justify-self: center;
+    }
+
+    #element_list_aside
+    {
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -389,6 +399,18 @@ aside section p
 
 
     #Titre_article
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    #element_list_aside
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    p
     {
         display: flex;
         justify-content: center;
