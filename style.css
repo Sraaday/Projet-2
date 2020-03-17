@@ -59,7 +59,7 @@ h1
     font-size: 30px;
     font-weight: bolder;
     text-transform: uppercase;
-
+    
 }
 
 h2
@@ -93,7 +93,7 @@ img
     margin-right: 5px;
 }
 
- h2 span
+h2 span
 {
     border-bottom: solid ;
     border-color: #ad2243 ;
@@ -169,7 +169,7 @@ main section article h5
 
 main section article p
 {
-
+    
     padding: 0px 20px 0px 0px;
 }
 
@@ -287,7 +287,7 @@ aside section p
         order: 2;
         transform: translateY(-30px);
     }
-
+    
     h2
     
     {
@@ -315,13 +315,13 @@ aside section p
     {
         margin-left: 50px;
     }
-
+    
     aside p 
     {
         padding-bottom: 20px;
     }
     
-
+    
 }
 
 
@@ -339,20 +339,20 @@ aside section p
         flex-direction: column;
         
     }
-
+    
     aside section ul
     {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-
+    
     aside section ul ol
     {
         display: flex;
         justify-self: center;
     }
-
+    
     #element_list_aside
     {
         display: flex;
@@ -370,26 +370,26 @@ aside section p
         display: flex;
         flex-wrap: wrap;
     }
-
+    
     main section article
     {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-
+    
     h4
-{
-    display: flex;
-    justify-content: space-around;
-}
-    h5
-
     {
         display: flex;
         justify-content: space-around;
     }
-
+    h5
+    
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+    
     .année
     {
         display: flex;
@@ -399,60 +399,60 @@ aside section p
         margin-top: 5px;
         margin-bottom: 20px;
     }
-
+    
     .année span
     {
         width: 100px;
         display: flex;
     }
-
-
+    
+    
     #Titre_article
     {
         display: flex;
         justify-content: center;
     }
-
+    
     #element_list_aside
     {
         display: flex;
         justify-content: center;
     }
-
+    
     p
     {
         display: flex;
         justify-content: center;
     }
-
+    
     #text_aside
     {
         display: flex;
         margin-left: 35px ;
         margin-bottom: 20px;
-
-
+        
+        
     }
-
+    
     aside section div
     {
         display: flex;
         justify-content: center;
     }
-
+    
 }
 
 /* Desktop */
 @media all and (min-width: 901px) {
-
+    
     body{
         display: flex;
         flex-direction: column;
-
+        
     }
-
     
-
+    
+    
     header
     {
         order: 1;
@@ -460,31 +460,31 @@ aside section p
         width: 100%;
         justify-content: space-around;
         flex-direction: column;
-
-
+        
+        
     }
-
+    
     h1
     {
         margin-top: 0px;
     }
-
-.Order_flex
-{
-    display: flex;
-    order: 2;
-}
-
+    
+    .Order_flex
+    {
+        display: flex;
+        order: 2;
+    }
+    
     body main
     {
         order: 2;
     }
-
+    
     body aside
     {
         order: 1;
     }
-
+    
     header
     {   
         display: flex;
@@ -499,12 +499,12 @@ aside section p
         flex-direction: column;
         order: 2;
         flex-grow: 1;
-
-
+        
+        
     }
-
-
-
+    
+    
+    
     #image
     {
         display: flex;
@@ -513,15 +513,15 @@ aside section p
         order: 1;
         width: 270px;
     }
-
-
+    
+    
     main section
     {
         display: flex;
         justify-content: right;
         flex-direction: column;
     }
-
+    
     main section article p
     {
         margin-left: 50px;
@@ -531,7 +531,7 @@ aside section p
         width: 270px;
         flex-direction: column;
     }
-
+    
     aside p 
     {
         padding-bottom: 20px;
@@ -542,13 +542,13 @@ aside section p
         flex-direction: column;
         
     }
-
+    
     #h3_aside {
         display: flex;
         justify-content: space-around;
-
+        
     }
-
+    
     ul
     {
         margin-left: 10px;
