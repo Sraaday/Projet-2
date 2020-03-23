@@ -87,7 +87,7 @@ img
     overflow: hidden;
 }
 
-#Prénom
+#Prenom
 {
     color: 	#ad2243;
     margin-right: 5px;
@@ -105,7 +105,7 @@ h2 span
 /* Main */
 
 
-#Titre_article
+.Titre_article
 {
     display: flex;
     flex-wrap: nowrap;
@@ -131,14 +131,14 @@ main section i
 {
     margin-bottom: 7px;
 }
-.année
+.annee
 {
     display: flex;
     flex-wrap: nowrap;
     margin-left: 60px;
 }
 
-.année span
+.annee span
 {
     width: 85px;
 }
@@ -186,6 +186,8 @@ aside
     
 }
 
+
+
 #Contact
 {
     display: flex;
@@ -193,7 +195,7 @@ aside
     
 }
 
-#h3_aside
+.h3_aside
 {
     display: flex;
     justify-content: center;
@@ -207,13 +209,13 @@ aside
     
 }
 
-.année
+.annee
 {
     font-weight: bold;
 }
 
 
-#element_list_aside
+.element_list_aside
 
 {
     display: flex;
@@ -222,7 +224,7 @@ aside
     
 }
 
-#lien_aside
+.lien_aside
 {
     margin: 1em auto;
     display: flex;
@@ -259,7 +261,22 @@ aside section p
 
 /*Tablettes */
 @media all and (max-width: 900px)
+
 {
+    
+    #Contact
+    {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    #Liste
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
     main
     {   
         display: flex;
@@ -277,7 +294,7 @@ aside section p
     {
         display: flex;
         justify-content: center;
-        margin-bottom: none;
+        margin-bottom: 0;
         order: 1;
     }
     
@@ -321,22 +338,59 @@ aside section p
         padding-bottom: 20px;
     }
     
+    ul
+    {
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: space-evenly;
+    }
+    
+    li
+    {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        padding-left: 8px;
+        padding-right: 8px;
+        
+    }
+    
     
 }
 
 
+@media all and (min-width: 760px) and (max-width: 900px)
 
+{
+    ul
+    {
+        display: flex ;
+        align-items: flex-start;
+    }
+}
 
 
 
 /* Changement en colonne de la liste de contact pour s'adapter à des écrans de tablette trop petit */
 
-@media all and (max-width: 700px)
+@media all and (max-width: 759px)
 {
     #Contact
     {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        
+    }
+    
+    #Liste
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-self: center;
         
     }
     
@@ -347,16 +401,26 @@ aside section p
         justify-content: center;
     }
     
-    aside section ul ol
+    aside section ul li
     {
         display: flex;
         justify-self: center;
     }
     
-    #element_list_aside
+    .element_list_aside
     {
         display: flex;
         justify-content: center;
+        justify-self: center;
+        
+    }
+    
+    li
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
     }
 }
 
@@ -377,7 +441,7 @@ aside section p
         flex-direction: column;
         justify-content: center;
     }
-
+    
     h3
     {
         display: flex;
@@ -398,7 +462,7 @@ aside section p
         margin-right: 30px;
     }
     
-    .année
+    .annee
     {
         display: flex;
         justify-content: center;
@@ -408,20 +472,20 @@ aside section p
         margin-bottom: 20px;
     }
     
-    .année span
+    .annee span
     {
         width: 100px;
         display: flex;
     }
     
     
-    #Titre_article
+    .Titre_article
     {
         display: flex;
         justify-content: center;
     }
     
-    #element_list_aside
+    .element_list_aside
     {
         display: flex;
         justify-content: center;
@@ -552,7 +616,7 @@ aside section p
         
     }
     
-    #h3_aside {
+    .h3_aside {
         display: flex;
         justify-content: space-around;
         
