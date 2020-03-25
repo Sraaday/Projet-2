@@ -257,6 +257,7 @@ aside section p
     margin: 0px 20px 0px 20px;
 }
 
+
 /*Media queries */
 
 /*Tablettes */
@@ -271,11 +272,17 @@ aside section p
         flex-direction: column;
     }
     
-    #Liste
+    #Contact
     {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-around;
+    }
+
+    #Contact h3
+    {
+        width: 100%;
     }
     main
     {   
@@ -384,15 +391,19 @@ aside section p
         
     }
     
-    #Liste
+    #Contact
     {
         display: flex;
         flex-direction: column;
         justify-content: center;
         justify-items: center;
         align-self: center;
+        width: 100%;
+        
         
     }
+
+  
     
     aside section ul
     {
