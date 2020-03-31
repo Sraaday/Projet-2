@@ -47,7 +47,6 @@ header
     justify-content: center;
     margin: auto;
     width: 100%;
-    background-color: #eded5a;
     padding-bottom: 1em;
     padding-top: 1em;
     
@@ -264,7 +263,8 @@ aside section p
 @media all and (max-width: 900px)
 
 {
-    
+
+
     #Contact
     {
         display: flex;
@@ -284,18 +284,24 @@ aside section p
     {
         width: 100%;
     }
-    main
+    body main
     {   
         display: flex;
         flex-direction: column;
+        transform: translateY(765px);
     } 
-    
-    header
+    body aside
+    {
+        transform: translateY(-1100px);
+
+    }
+    body header
     {   
         display: flex;
         flex-direction: column;
-        
+
     }
+
     
     h1
     {
@@ -309,16 +315,19 @@ aside section p
     {
         display: flex;
         order: 2;
-        transform: translateY(-30px);
+        
     }
     
+    img 
+    {
+        margin-top: 15px;
+    }
     h2
     
     {
         display: flex;
         justify-content: center;
         order: 3;
-        transform: translateY(180px);
         
         
         
@@ -539,11 +548,13 @@ aside section p
     
     header
     {
-        order: 1;
+        order: 2;
         display: flex;
         width: 100%;
         justify-content: space-around;
-        flex-direction: column;
+        flex-direction: row;
+        align-self: center;
+        transform: translateX(50px) translateY(25px);
         
         
     }
@@ -551,6 +562,15 @@ aside section p
     h1
     {
         margin-top: 0px;
+        display: flex;
+        justify-content: center;
+        margin-left: 35px;
+    }
+
+    h2
+    {
+        display: flex;
+        justify-content: center;
     }
     
     .Order_flex
@@ -561,19 +581,26 @@ aside section p
     
     body main
     {
-        order: 2;
+        order: 3;
     }
     
     body aside
     {
+        display: flex;
         order: 1;
+        transform: translateY(-125px);
     }
     
     header
     {   
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: right;
+        margin-left: 0px;
+        margin-right: 0px;
+        max-width: 600px;
+        padding-bottom: 75px;
+        
     }
     
     .Flex_Title
@@ -581,8 +608,8 @@ aside section p
         display: flex;
         justify-content: center;
         flex-direction: column;
-        order: 2;
         flex-grow: 1;
+        transform: translateX(50px), translateY(50px);
         
         
     }
@@ -624,7 +651,18 @@ aside section p
     #Contact {
         display: flex;
         flex-direction: column;
+        order: 2;
         
+    }
+
+    #a_propos
+    {
+        order: 3;
+    }
+
+    #Loisirs
+    {
+        order: 4;
     }
     
     .h3_aside {
