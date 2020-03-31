@@ -204,7 +204,7 @@ aside
     font-size: x-large;
     font-weight: bolder;
     margin-bottom: 1em;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 0px 10px 0px;
     
 }
 
@@ -263,7 +263,24 @@ aside section p
 @media all and (max-width: 900px)
 
 {
+    body{
+        display: flex;
+        width: fit-content;
+    }
 
+    .Order_flex{
+        display: flex;
+        flex-direction: column;
+    }
+
+    body .Order_flex aside {
+        order: 2;
+    }
+
+    body .Order_flex main 
+    {
+        order: 3;
+    }
 
     #Contact
     {
@@ -288,13 +305,9 @@ aside section p
     {   
         display: flex;
         flex-direction: column;
-        transform: translateY(765px);
+        order: 3;
     } 
-    body aside
-    {
-        transform: translateY(-1100px);
 
-    }
     body header
     {   
         display: flex;
