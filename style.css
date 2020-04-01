@@ -267,21 +267,21 @@ aside section p
         display: flex;
         width: fit-content;
     }
-
+    
     .Order_flex{
         display: flex;
         flex-direction: column;
     }
-
+    
     body .Order_flex aside {
         order: 2;
     }
-
+    
     body .Order_flex main 
     {
         order: 3;
     }
-
+    
     #Contact
     {
         display: flex;
@@ -296,7 +296,7 @@ aside section p
         flex-wrap: wrap;
         justify-content: space-around;
     }
-
+    
     #Contact h3
     {
         width: 100%;
@@ -307,14 +307,14 @@ aside section p
         flex-direction: column;
         order: 3;
     } 
-
+    
     body header
     {   
         display: flex;
         flex-direction: column;
-
+        
     }
-
+    
     
     h1
     {
@@ -424,8 +424,8 @@ aside section p
         
         
     }
-
-  
+    
+    
     
     aside section ul
     {
@@ -579,7 +579,7 @@ aside section p
         justify-content: center;
         margin-left: 35px;
     }
-
+    
     h2
     {
         display: flex;
@@ -667,12 +667,12 @@ aside section p
         order: 2;
         
     }
-
+    
     #a_propos
     {
         order: 3;
     }
-
+    
     #Loisirs
     {
         order: 4;
