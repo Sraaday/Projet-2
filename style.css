@@ -591,8 +591,9 @@ aside section p
         display: flex;
         width: 100%;
         justify-content: space-around;
-        flex-direction: row;
+        flex-direction: column;
         align-self: center;
+        width: 1000px;
         
         
     }
@@ -601,17 +602,18 @@ aside section p
     {
         margin-top: 0px;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         margin-left: 45px;
-        justify-self: left;
+        justify-self: center;
+        margin-right: 135px;
     }
     
     h2
     {
         display: flex;
-        justify-content: flex-start;
-        justify-self: left;
-        margin-left: 50px;
+        justify-content: center;
+        justify-self: center;
+        margin-right: 185px;
     }
     
     .Order_flex
@@ -635,11 +637,8 @@ aside section p
     header
     {   
         display: flex;
-        flex-direction: row;
-        justify-content: right;
-        margin-left: 0px;
-        margin-right: 0px;
-        max-width: 600px;
+        flex-direction: column;
+        justify-content: center;
         padding-bottom: 75px;
         
     }
@@ -650,7 +649,6 @@ aside section p
         justify-content: center;
         flex-direction: column;
         flex-grow: 1;
-        margin-left: 50px;
         transform: translateY(50px);
     }
     
