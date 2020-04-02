@@ -306,13 +306,22 @@ aside section p
         display: flex;
         flex-direction: column;
         order: 3;
+        transform: translateY(100px);
     } 
     
     body header
     {   
         display: flex;
         flex-direction: column;
+        order: 2;
+        transform: translateY(-1120px);
+
         
+    }
+
+    body aside
+    {
+        order: 1;
     }
     
     
@@ -467,7 +476,24 @@ aside section p
         display: flex;
         flex-wrap: wrap;
     }
-    
+
+    h1
+    {
+        transform: translateY(-600px) translateX(35px) ;
+        position: fixed;
+    }
+
+    h2
+    {
+        transform: translateY(-530px) translateX(75px);
+        position: fixed;
+    }
+
+    body main 
+    {
+        transform: translateY(125px);
+    }
+
     main section article
     {
         display: flex;
@@ -624,9 +650,8 @@ aside section p
         justify-content: center;
         flex-direction: column;
         flex-grow: 1;
-        transform: translateX(50px)  translateY(50px);
-        
-        
+        margin-left: 50px;
+        transform: translateY(50px);
     }
     
     
