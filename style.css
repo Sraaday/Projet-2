@@ -622,7 +622,7 @@ aside section p
         justify-content: center;
         flex-direction: column;
         flex-grow: 1;
-        transform: translateX(50px), translateY(50px);
+        transform: translateX(50px)  translateY(50px);
         
         
     }
