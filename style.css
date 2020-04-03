@@ -597,6 +597,11 @@ aside section p
     {
         margin-left: 6px;
     }
+
+    body
+    {
+        margin: auto;
+    }
 }
 
 /* Desktop */
