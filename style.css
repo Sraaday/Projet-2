@@ -573,7 +573,31 @@ aside section p
     }
     
 }
+/* Correction mise en page téléphone */
+@media all and (max-width: 400px)
+{
+    h1
+    {
+        transform: translateY(-650px) translateX(25px);
+    }
 
+    h2
+    {
+        transform: translateY(-575px) translateX(65px);
+    }
+}
+
+@media all and (max-width: 320px)
+{
+    h1{
+        margin-left: 15px;
+    }
+
+    h2
+    {
+        margin-left: 10px;
+    }
+}
 /* Desktop */
 @media all and (min-width: 901px) {
     
